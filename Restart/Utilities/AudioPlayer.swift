@@ -15,6 +15,7 @@ func playSound(sound:String,type:String){
         do{
            audioPlayer=try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
             audioPlayer?.play()
+            //test for upload
         }catch{
             print("Could not play the sound file.")
         }
